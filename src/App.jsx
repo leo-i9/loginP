@@ -11,7 +11,7 @@ import { TaskProvider } from './constext/taskcontext.jsx'
 import Navar from './components/navar.jsx'
 function App() {
   const [count, setCount] = useState(0)
-
+////  "preview": "vite preview"
   return (
  <AuthProvider>
 <TaskProvider>

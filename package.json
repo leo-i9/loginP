@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "http://leo-i9.github.io/loginP",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
