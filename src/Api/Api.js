@@ -11,7 +11,8 @@ export const registerP=async(user)=>{
     options.body=JSON.stringify(user)
     options.method='POST';
          try { 
-            const res = await fetch("http://localhost:3000/register", options);
+         
+            const res = await fetch("https://new-proyect.onrender.com/register", options);
           
             if (!res.ok) {
           
@@ -41,7 +42,7 @@ export const loginRequest = async (user)=>{
          
            try { 
           
-            const res = await fetch("http://localhost:3000/login", options);
+            const res = await fetch("https://new-proyect.onrender.com/login", options);
          
             if (!res.ok) {
           
@@ -66,7 +67,7 @@ export const veryfyToken = async()=>{
     ,}
 
     try {
-        const res = await fetch("http://localhost:3000/veryfy",options);
+        const res = await fetch("https://new-proyect.onrender.com/veryfy",options);
     return res.json()
     } catch (error) {
         
@@ -83,7 +84,7 @@ export const getTasks =async()=>{
   
      options.credentials = 'include';
 try {
-  const res = await fetch("http://localhost:3000/task", options);
+  const res = await fetch("https://new-proyect.onrender.com/task", options);
  return  res.json()
 } catch (error) {
  console.log(error) 
@@ -99,7 +100,7 @@ export const Gettak = async(id)=>{
     options.credentials = 'include';
     try {
     
-      const res = await fetch(`http://localhost:3000/task/${id}`, options);
+      const res = await fetch(`https://new-proyect.onrender.com/task/${id}`, options);
        
       return await  res.json();
         
@@ -120,7 +121,7 @@ export const updateTask =async (id,udate)=>{
      options.body= JSON.stringify(udate);
      try {
     
-      const res = await fetch(`http://localhost:3000/task/${id}`, options);
+      const res = await fetch(`https://new-proyect.onrender.com/task/${id}`, options);
        
       return await  res.json();
    
@@ -140,7 +141,7 @@ export const deleteteTask =async(id)=>{
      options.credentials = 'include';
 
      try {
-      const res = await fetch(`http://localhost:3000/task/${id}`, options);
+      const res = await fetch(`https://new-proyect.onrender.com/task/${id}`, options);
      return await res
     } catch (error) {
      console.log(error) 
@@ -150,7 +151,7 @@ export const CreateTask =async(datos)=>{
 options.method = "POST"
 options.body=JSON.stringify(datos)
   try {
-    const res = await fetch("http://localhost:3000/task", options);
+    const res = await fetch("https://new-proyect.onrender.com/task", options);
    return await res.json()
   } catch (error) {
    console.log(error) 
