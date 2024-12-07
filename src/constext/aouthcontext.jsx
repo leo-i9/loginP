@@ -29,7 +29,7 @@ const [login ,setLogin] = useState(true)
         setError(res)
     }
         if(res && res.username){
-         console.log(res)
+       
             setUser(res.data);    
             setIsauthenticated(true)
         }else  setIsauthenticated(false)

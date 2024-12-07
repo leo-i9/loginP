@@ -6,7 +6,7 @@ const{isauthenticated,logout,user} = useAuth()
   const [name ,setName]=useState("")
 
 async function Left(){
-    if(!Array.isArray(user)){
+    if(!Array.isArray(await user)){
         if(user){
             const {username} = await user;
             setName(username)

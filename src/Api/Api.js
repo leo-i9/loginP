@@ -41,7 +41,7 @@ export const loginRequest = async (user)=>{
            options.credentials = 'include';
          
            try { 
-          
+            
             const res = await fetch("https://new-proyect.onrender.com/login", options);
          
             if (!res.ok) {

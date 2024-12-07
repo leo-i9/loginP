@@ -28,7 +28,7 @@ export const TaskProvider =({children}) => {
     const createTask =async (task)=>{
  
        try {
-        const res = CreateTask(task) 
+      
         setTask(res)  
        } catch (error) {
         console.log(error)
